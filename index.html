@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <script src="./willFillFun.js"></script>
+    <div class="container">
+      <input id="speedSlider" type="range" value="0" step="0.1" min="0" max="0.9" />     
+      <label for="speedSlider">
+        <p>Speed of traveller expressed as fraction of the speed of light:</p>
+        <p id="sliderDescription"></p>
+      </label>
+      <table>
+        <tr>
+          <td>Stationary Time:</td>
+          <td id="stationaryTime"></td>
+        </tr>
+        <tr>
+          <td>Relativistic Time:</td>
+          <td id="relativeTime"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,9 +1,10 @@
 <html>
   <head>
     <link href="styles.css" rel="stylesheet"/>
+    <link href="range-styles.css" rel="stylesheet"/>
   </head>
   <body>
-    <script src="./willFillFun.js"></script>
+    <script src="./app.js"></script>
     <div class="container">
       <input id="speedSlider" type="range" value="0" step="0.1" min="0" max="0.9" />     
       <label for="speedSlider">
@@ -12,12 +13,12 @@
       </label>
       <table>
         <tr>
-          <td>Stationary Time:</td>
-          <td id="stationaryTime"></td>
+          <td class="clock-label">Stationary Time:</td>
+          <td id="stationaryTime" class="clock-value"></td>
         </tr>
         <tr>
-          <td>Relativistic Time:</td>
-          <td id="relativeTime"></td>
+          <td class="clock-label">Relativistic Time:</td>
+          <td id="relativeTime" class="clock-value"></td>
         </tr>
       </table>
     </div>

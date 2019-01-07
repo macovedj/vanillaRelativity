@@ -3,7 +3,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #333;
-  color: cadetblue;
+  color: #9f8ec2;
   font-family: sans-serif;
 }
 
@@ -13,9 +13,22 @@ input {
 
 table {
   font-size: 10vmin;
+  width: 100%;
 }
+
 
 .container {
   
+}
+
+.clock-label {
+  font-size: 5vmin;
+  color: #9f8ec2;
+
+}
+
+.clock-value {
+  font-size: 8vmin;
+  text-align: right;
 }
 

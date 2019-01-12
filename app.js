@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const relativeTimeNode = document.querySelector('#relativeTime');
-  const actualTimeNode = document.querySelector('#stationaryTime');
+  const stationaryTimeNode = document.querySelector('#stationaryTime');
   const descriptionParagraph = document.querySelector('#sliderDescription');
   
   const renderTimers = ({ rTime, time }) => {
     relativeTimeNode.innerText = rTime;
-    actualTimeNode.innerText = time; 
+    stationaryTimeNode.innerText = time; 
     descriptionParagraph.innerText = sliderNode.value;
   };
 

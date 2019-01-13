@@ -2,9 +2,10 @@
   "name": "vanillaRelativity",
   "version": "1.0.0",
   "description": "",
-  "main": "willFillFun.js",
+  "main": "app.js",
   "dependencies": {
-    "lite-server": "^2.4.0"
+    "lite-server": "^2.4.0",
+    "moment": "^2.23.0"
   },
   "devDependencies": {},
   "scripts": {

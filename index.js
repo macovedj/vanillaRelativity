@@ -1,3 +1,6 @@
+let moment = require('moment');
+let momentDurationFormatSetup = require("moment-duration-format");
+
 let lastTime = Date.now();
 let rTime = 0;
 let gamma = 1;
@@ -25,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const tick = () => {
     const now = Date.now();
     const sinceLast = now - lastTime;
-    computeGamma()
     gamma = computeGamma()
     time += sinceLast;
     rTime += (sinceLast / gamma);

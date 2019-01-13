@@ -5,7 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "lite-server": "^2.4.0",
-    "moment": "^2.23.0"
+    "moment": "^2.23.0",
+    "moment-duration-format": "^2.2.2"
   },
   "devDependencies": {},
   "scripts": {

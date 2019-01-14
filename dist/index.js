@@ -6317,11 +6317,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var stationaryTimeNode = document.querySelector('#stationaryTime');
   var descriptionParagraph = document.querySelector('#sliderDescription');
 
-  var renderTimers = function renderTimers(_ref) {
-    var rTime = _ref.rTime,
-        time = _ref.time;
-    relativeTimeNode.innerText = rTime;
-    stationaryTimeNode.innerText = time;
+  var renderTimers = function renderTimers(rTime, time) {
+    console.log(rTime, time);
+    relativeTimeNode.innerText = moment.duration(rTime).format('mm:ss');
+    stationaryTimeNode.innerText = moment.duration(time).format('mm:ss');
     descriptionParagraph.innerText = sliderNode.value;
   };
 
@@ -6331,10 +6330,7 @@ document.addEventListener('DOMContentLoaded', function () {
     gamma = computeGamma();
     time += sinceLast;
     rTime += sinceLast / gamma;
-    renderTimers({
-      rTime: (rTime / 1000).toFixed(0),
-      time: (time / 1000).toFixed(0)
-    });
+    renderTimers(rTime, time);
     lastTime = now;
   };
 
@@ -6367,7 +6363,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56299" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65164" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

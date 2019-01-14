@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const stationaryTimeNode = document.querySelector('#stationaryTime');
   const descriptionParagraph = document.querySelector('#sliderDescription');
   
-  const renderTimers = ({ rTime, time }) => {
-    relativeTimeNode.innerText = rTime;
-    stationaryTimeNode.innerText = time; 
+  const renderTimers = (rTime, time) => {
+    relativeTimeNode.innerText = moment.duration(rTime).format('mm:ss');
+    stationaryTimeNode.innerText = moment.duration(time).format('mm:ss'); 
     descriptionParagraph.innerText = sliderNode.value;
   };
 
@@ -31,10 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gamma = computeGamma()
     time += sinceLast;
     rTime += (sinceLast / gamma);
-    renderTimers({ 
-      rTime: (rTime / 1000).toFixed(0), 
-      time: (time / 1000).toFixed(0), 
-    });
+    renderTimers( rTime, time);
     lastTime = now;
   };
 

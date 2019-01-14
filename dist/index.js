@@ -6318,7 +6318,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var descriptionParagraph = document.querySelector('#sliderDescription');
 
   var renderTimers = function renderTimers(rTime, time) {
-    console.log(rTime, time);
     relativeTimeNode.innerText = moment.duration(rTime).format('mm:ss');
     stationaryTimeNode.innerText = moment.duration(time).format('mm:ss');
     descriptionParagraph.innerText = sliderNode.value;
@@ -6363,7 +6362,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65164" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59966" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

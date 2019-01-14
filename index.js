@@ -18,7 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const relativeTimeNode = document.querySelector('#relativeTime');
   const stationaryTimeNode = document.querySelector('#stationaryTime');
   const descriptionParagraph = document.querySelector('#sliderDescription');
-  
+  const resetButton = document.querySelector('.reset-button');
+
+  resetButton.addEventListener("click", () => {
+    rTime = 0,
+    time = 0;
+    renderTimers(0,0);
+  })
+
   const renderTimers = (rTime, time) => {
     relativeTimeNode.innerText = moment.duration(rTime).format('mm:ss');
     stationaryTimeNode.innerText = moment.duration(time).format('mm:ss'); 

@@ -6316,6 +6316,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var relativeTimeNode = document.querySelector('#relativeTime');
   var stationaryTimeNode = document.querySelector('#stationaryTime');
   var descriptionParagraph = document.querySelector('#sliderDescription');
+  var resetButton = document.querySelector('.reset-button');
+  resetButton.addEventListener("click", function () {
+    rTime = 0, time = 0;
+    renderTimers(0, 0);
+  });
 
   var renderTimers = function renderTimers(rTime, time) {
     relativeTimeNode.innerText = moment.duration(rTime).format('mm:ss');
@@ -6362,7 +6367,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49207" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60162" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

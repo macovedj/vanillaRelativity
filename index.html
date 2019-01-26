@@ -4,23 +4,89 @@
   </head>
   <body>
     <script src="./index.js"></script>
-    <div class="container">
-      <input id="speedSlider" type="range" value="0" step="0.1" min="0" max="0.9" />     
-      <label for="speedSlider">
-        <p>Speed of traveller expressed as fraction of the speed of light:</p>
-        <p id="sliderDescription"></p>
-      </label>
-      <table>
-        <tr>
-          <td class="clock-label">Stationary Time:</td>
-          <td id="stationaryTime" class="clock-value"></td>
-        </tr>
-        <tr>
-          <td class="clock-label">Relativistic Time:</td>
-          <td id="relativeTime" class="clock-value"></td>
-        </tr>
-      </table>
-      <button class="reset-button">Reset Timers</button>
+    <div class="outer-container">
+      <div class="clock-container">
+        <input id="speedSlider" type="range" value="0" step="0.1" min="0" max="0.9" />     
+        <label for="speedSlider">
+          <p>Speed of traveller expressed as fraction of the speed of light:</p>
+          <p id="sliderDescription"></p>
+        </label>
+        <table>
+          <tr>
+            <td class="stationary-clock-label">Stationary Time:</td>
+            <td id="stationaryTime" class="stationary-clock-value"></td>
+          </tr>
+          <tr>
+            <td class="moving-clock-label">Relativistic Time:</td>
+            <td id="relativeTime" class="moving-clock-value"></td>
+          </tr>
+        </table>
+        <button class="reset-button">Reset Timers</button>
+      </div>
+    </div>
+    <div class="stationary-ruler">
+      <div class="stationary-light-second">
+        <div class="stationary-notch"></div>
+      </div> 
+      <div class="stationary-light-second">
+        <div class="stationary-notch"></div>
+      </div> 
+      <div class="stationary-light-second">
+        <div class="stationary-notch"></div>
+      </div> 
+      <div class="stationary-light-second">
+        <div class="stationary-notch"></div>
+      </div> 
+      <div class="stationary-light-second">
+        <div class="stationary-notch"></div>
+      </div> 
+      <div class="stationary-light-second">
+        <div class="stationary-notch"></div>
+      </div> 
+      <div class="stationary-light-second">
+        <div class="stationary-notch"></div>
+      </div> 
+      <div class="stationary-light-second">
+        <div class="stationary-notch"></div>
+      </div> 
+      <div class="stationary-light-second">
+        <div class="stationary-notch"></div>
+      </div> 
+      <div class="stationary-light-second">
+        <div class="stationary-notch"></div>
+      </div> 
+    </div>
+    <div class="moving-ruler">
+      <div class="moving-light-second">
+        <div class="moving-notch"></div>
+      </div> 
+      <div class="moving-light-second">
+        <div class="moving-notch"></div>
+      </div> 
+      <div class="moving-light-second">
+        <div class="moving-notch"></div>
+      </div> 
+      <div class="moving-light-second">
+        <div class="moving-notch"></div>
+      </div> 
+      <div class="moving-light-second">
+        <div class="moving-notch"></div>
+      </div> 
+      <div class="moving-light-second">
+        <div class="moving-notch"></div>
+      </div> 
+      <div class="moving-light-second">
+        <div class="moving-notch"></div>
+      </div> 
+      <div class="moving-light-second">
+        <div class="moving-notch"></div>
+      </div> 
+      <div class="moving-light-second">
+        <div class="moving-notch"></div>
+      </div> 
+      <div class="moving-light-second">
+        <div class="moving-notch"></div>
+      </div> 
     </div>
   </body>
 </html>

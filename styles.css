@@ -1,10 +1,8 @@
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #333;
   color: #9f8ec2;
   font-family: sans-serif;
+  position: fixed;
 }
 
 input {
@@ -16,19 +14,75 @@ table {
   width: 100%;
 }
 
-
-.container {
-  
-}
-
-.clock-label {
+.stationary-clock-label {
   font-size: 5vmin;
   color: #9f8ec2;
-
 }
 
-.clock-value {
-  font-size: 8vmin;
+.moving-clock-label {
+  font-size: 5vmin;
+  color: cadetblue;
+}
+
+.stationary-clock-value {
+  font-size: 5vmin;
   text-align: right;
 }
 
+.moving-clock-value {
+  font-size: 5vmin;
+  text-align: right;
+  color: cadetblue;
+}
+
+.clock-container {
+  margin-bottom: 200px;
+}
+
+.outer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #9f8ec2;
+  font-family: sans-serif;
+}
+
+.moving-ruler {
+  display: flex;
+  background-color: cadetblue;
+  height: 4px;
+  width: 100vw;
+}
+
+.moving-light-second {
+  display: flex;
+  height: 100%;
+  width: 10%;
+}
+
+.moving-notch {
+  background-color: #000;
+  height: 100%;
+  width: 10%;
+}
+
+.stationary-ruler {
+  display: flex;
+  background-color: #9f8ec2;
+  height: 3px;
+  width: 100vw;
+  margin-bottom: 20px;
+}
+
+.stationary-light-second {
+  display: flex;
+  height: 100%;
+  width: 10%;
+}
+
+.stationary-notch {
+  background-color: #000;
+  height: 100%;
+  width: 10%;
+}

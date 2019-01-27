@@ -59,6 +59,7 @@ table {
   display: flex;
   height: 100%;
   width: 10%;
+  justify-content: flex-end;
 }
 
 .moving-notch {
@@ -79,10 +80,15 @@ table {
   display: flex;
   height: 100%;
   width: 10%;
+  justify-content: flex-end;
 }
 
 .stationary-notch {
   background-color: #000;
   height: 100%;
   width: 10%;
+}
+
+@keyframes notch {
+
 }
